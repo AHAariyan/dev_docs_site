@@ -1,0 +1,138 @@
+# DevDocs landing site
+
+Static, SEO-focused website for **DevDocs - Offline Developer Docs** (`com.devdocs.app`,
+[Google Play](https://play.google.com/store/apps/details?id=com.devdocs.app)), made for GitHub Pages.
+
+- Plain HTML and one stylesheet. No build step, no frameworks, no web fonts, no trackers, no third-party requests.
+- Light and dark follow the visitor's system setting (`prefers-color-scheme`).
+- Default public URL: **https://ahaariyan.github.io/devdocs/** (stored once, in `SITE_URL`; see "Changing the base URL").
+- Privacy policy (existing, used by the app and the Play listing): https://devdocs.privacypolicy.matrabhed.com/
+
+## Pages
+
+| Path | Purpose | Main search terms |
+|---|---|---|
+| `/` | Home | offline developer documentation, offline docs app android, programming documentation offline, developer docs offline reader |
+| `/python-documentation-offline/` | Python docset | python documentation offline (download), python docs offline, python offline manual |
+| `/kotlin-documentation-offline/` | Kotlin stdlib docset | kotlin offline documentation, kotlin docs offline |
+| `/java-documentation-offline/` | Java SE API docset | java documentation offline, java api documentation offline download |
+| `/javascript-documentation-offline/` | JavaScript (MDN) docset | javascript documentation offline, javascript docs offline |
+| `/android-documentation-offline/` | Android (Kotlin) API reference | android documentation offline, android developer documentation offline, android sdk offline documentation |
+| `/react-documentation-offline/` | React docset | react documentation offline (download), react docs offline |
+| `/django-documentation-offline/` | Django docset | django documentation offline (download), django offline docs |
+| `/pro/` | DevDocs Pro, **coming soon** (planned price, honest AI notes) | |
+| `/faq/` | Full FAQ (FAQPage structured data) | |
+| `404.html` | Not-found page (GitHub Pages serves it for any missing path, so it uses absolute URLs) | |
+
+Every docset page has real figures from that docset's own index (version, entry count, entry types, download size,
+example entries), checked on 2026-10-27. When a docset gets a big update, refresh the numbers on its page.
+
+Other files:
+
+- `styles.css`: all styles. `assets/site.js`: the only script (see "Google Play links").
+- `assets/shots/*.webp`: real app screenshots (540 px wide, status bar and system nav bar cropped) from the app repo's
+  `docs/device-test-2026-10-25/`, `docs/test-pass-2026-10-24/` and `docs/pro-presale/`. Pro screenshots are labelled "Pre-release build".
+- `assets/og-devdocs.jpg`: 1200x630 link preview, rendered from `og-share.html` (the command is in that file).
+- `assets/play-logo.png`: the Play triangle used inside our own "Get it on Google Play" button (same approach as the Recover site; no hotlinked badge).
+- `robots.txt` (allows everything, points to the sitemap), `sitemap.xml` (with `lastmod`), `.nojekyll` (serve files as-is).
+- `tools/check.py`: offline checks (well-formed HTML, one H1, title/description length, canonical, JSON-LD parses, internal links and
+  anchors, image width/height vs real size, sitemap coverage, page weight). Run it before every push.
+- `tools/set-base-url.py`: changes the public URL everywhere.
+- `docs/`: full-page renders of the home page at 1440 px and 390 px.
+
+## Deploy on GitHub Pages
+
+1. Create a public repository on GitHub, for example `AHAariyan/devdocs` (the repo name becomes the URL path:
+   `https://ahaariyan.github.io/devdocs/`). If you pick another name, change the base URL first (next section).
+2. Push this folder:
+   ```sh
+   git remote add origin https://github.com/AHAariyan/devdocs.git
+   git push -u origin main
+   ```
+3. On GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main`, folder `/ (root)` → Save.**
+4. After a minute the site is live. Open it, click through, and check a page on your phone.
+
+### Optional: custom domain (for example `devdocs.matrabhed.com`)
+
+1. Run `python3 tools/set-base-url.py https://devdocs.matrabhed.com/` and commit.
+2. Add a file named `CNAME` containing just `devdocs.matrabhed.com`, commit and push.
+3. At your DNS provider add a `CNAME` record: `devdocs` → `ahaariyan.github.io`.
+4. In **Settings → Pages**, enter the custom domain, wait for the DNS check, then tick **Enforce HTTPS**.
+
+## Changing the base URL
+
+The public URL is written in one place, `SITE_URL`, and copied into canonical links, Open Graph/Twitter tags, JSON-LD,
+`sitemap.xml`, `robots.txt` and `404.html`. To change it:
+
+```sh
+python3 tools/set-base-url.py https://NEW-URL/     # must end with /
+python3 tools/check.py
+```
+
+Internal links between pages are relative, so they work at any URL.
+
+## Google Search Console
+
+1. Go to https://search.google.com/search-console → **Add property**.
+   - With a custom domain: choose **Domain** and verify with the DNS TXT record it gives you.
+   - Without one: choose **URL prefix**, enter the full site URL (for example `https://ahaariyan.github.io/devdocs/`),
+     pick **HTML tag**, and paste the `<meta name="google-site-verification" ...>` line into the `<head>` of `index.html`
+     (keep it there). Push, then click **Verify**.
+2. **Sitemaps** → submit `sitemap.xml` (full URL: `<site URL>sitemap.xml`).
+3. **URL inspection** → paste the home page URL → **Request indexing**. Repeat for a few docset pages.
+4. Check **Enhancements** after a few days for FAQ and breadcrumb structured data, and **Pages** for indexing problems.
+5. Optional: Bing Webmaster Tools can import the property from Search Console in one click.
+
+## Google Play links
+
+Every Play button is a normal link with a referrer, so it works without JavaScript:
+`https://play.google.com/store/apps/details?id=com.devdocs.app&referrer=utm_source%3Dwebsite%26utm_medium%3D<page>`
+(`<page>` is for example `home`, `python`, `python_footer`, `pro_notify`). Play Console shows these under
+**Statistics / Store listing acquisition** by UTM source and medium.
+
+If a visitor arrives with `utm_*` tags (for example a post links to `<site URL>?utm_source=x&utm_medium=social&utm_campaign=launch`),
+`assets/site.js` passes those tags to Play instead, so the install is credited to that post.
+
+## When DevDocs Pro launches
+
+The Pro page currently says **Coming soon / not on sale yet** and shows **planned** prices ($3.99/month, $24.99/year with a
+7-day free trial for new subscribers). The "notify me" path is simply the Play link; no emails are collected. When Pro is on sale:
+
+1. `pro/index.html`:
+   - hero: replace the `Coming soon · not on sale yet` badge with `Now available`, change the button label
+     "Get the free app on Google Play" to "Try Pro free for 7 days", and delete the "Want to know when Pro launches?" line;
+   - pricing section: remove the `May change before launch` badge, the word "Planned" in both cards and the
+     "not on sale yet" sentence; put in the real prices from Play Console;
+   - FAQ: replace "When will DevDocs Pro be available?" with something like "How do I start the free trial?";
+   - feature captions: "Pre-release build." → "Real screenshot." once you have screenshots of the release build.
+2. `index.html`: the "DevDocs Pro: ask your docs" section (kicker `Coming soon`, badge `Not on sale yet`,
+   caption "Pre-release build. Not available yet.") and the first FAQ answer ("A paid DevDocs Pro with AI features is planned").
+3. `faq/index.html`: the "What is DevDocs Pro?" answer.
+4. Footer of every page: "DevDocs Pro (coming soon)" → "DevDocs Pro". (`grep -rl "coming soon" --include=*.html .`)
+5. If the price is shown as a product, you may then add an `offers` entry for Pro; until then the only `Offer` in
+   structured data is the free app (price 0).
+6. Update `lastmod` in `sitemap.xml`, run `python3 tools/check.py`, push.
+
+Keep the honest AI notes (answers can be wrong, they cite their sources, what is sent) after launch.
+
+## Copy rules
+
+- Claim only what the shipped free app does. Pro features are always marked as coming soon until they are on sale.
+- No competitor app names. Docset names (Python, Kotlin, React…) are fine: they are the content.
+- No ratings, reviews or user counts that cannot be verified (Play currently shows "100+ downloads"; the site does not use it).
+- Numbers about the catalogue (806 docsets: 181 official, 624 community-contributed, 1 vendor) come from the app's Store
+  screen and its catalogue code; re-check them now and then.
+
+## SEO checklist (for every change)
+
+- [ ] One `<h1>` per page; titles ≤ 60 characters; meta descriptions ≤ 155 characters (`tools/check.py` checks this).
+- [ ] New page? Add it to `sitemap.xml`, link to it from at least two other pages with descriptive anchor text,
+      give it a canonical URL, OG/Twitter tags and BreadcrumbList JSON-LD.
+- [ ] New docset page? Use real entries from that docset, check search demand first
+      (`curl -s "https://suggestqueries.google.com/complete/search?client=firefox&q=<lang>+documentation+offline"`),
+      and write content that is genuinely about that docset (no copy-paste pages).
+- [ ] Images: WebP, `width`/`height` set, `loading="lazy"` for anything below the first screen, descriptive `alt`.
+- [ ] Changed the first screen or the share image? Re-render `assets/og-devdocs.jpg` under a new file name (X caches by URL).
+- [ ] Update `lastmod` in `sitemap.xml` for changed pages.
+- [ ] `python3 tools/check.py` passes; optionally `npx --yes html-validate "**/*.html"`.
+- [ ] After pushing: Search Console → URL inspection → Request indexing for changed pages.

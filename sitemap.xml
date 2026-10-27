@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ahaariyan.github.io/devdocs/</loc><lastmod>2026-10-27</lastmod><priority>1.0</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/pro/</loc><lastmod>2026-10-27</lastmod><priority>0.6</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/faq/</loc><lastmod>2026-10-27</lastmod><priority>0.7</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/python-documentation-offline/</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/kotlin-documentation-offline/</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/java-documentation-offline/</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/javascript-documentation-offline/</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/android-documentation-offline/</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/react-documentation-offline/</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ahaariyan.github.io/devdocs/django-documentation-offline/</loc><lastmod>2026-10-27</lastmod><priority>0.8</priority></url>
+</urlset>

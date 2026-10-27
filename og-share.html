@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DevDocs share image (1200x630)</title>
+<meta name="robots" content="noindex">
+<!--
+  Source of assets/og-devdocs.jpg, the link preview used by X, Facebook, WhatsApp, Slack and Discord.
+  Re-render after changing it (from the site folder):
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars \
+      --window-size=1200,630 --screenshot=/tmp/og.png "file://$PWD/og-share.html"
+  then save it as a JPEG (quality ~86) at assets/og-devdocs.jpg. If you change the image, give it a
+  new file name, because X and Facebook cache previews by image URL.
+-->
+<style>
+* { box-sizing: border-box; margin: 0; }
+body { width: 1200px; height: 630px; overflow: hidden; position: relative; color: #f6ecf3;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;
+  background: radial-gradient(50% 80% at 82% 40%, rgba(220,93,133,.30), transparent 70%), radial-gradient(40% 60% at 0% 100%, rgba(120,60,140,.35), transparent 70%), #160b17; }
+.grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 40px 40px; }
+.copy { position: absolute; left: 72px; top: 0; bottom: 0; width: 680px; display: flex; flex-direction: column; justify-content: center; }
+.brand { display: flex; align-items: center; gap: 16px; font-size: 28px; font-weight: 700; }
+.brand img { width: 56px; height: 56px; }
+h1 { font-size: 76px; line-height: 1.02; letter-spacing: -2.5px; margin-top: 34px; font-weight: 800; }
+h1 span { color: #f07ca0; }
+p { font-size: 27px; line-height: 1.4; color: #d9c8d4; margin-top: 22px; max-width: 600px; }
+.term { white-space: nowrap; margin-top: 30px; font: 22px/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace; color: #c9b6c4; }
+.term b { color: #f07ca0; font-weight: 600; }
+.term i { font-style: normal; color: #8fe3b0; }
+.phone { position: absolute; right: 96px; top: 56px; width: 300px; border: 9px solid #2c1a2d; border-radius: 40px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,.55), 0 0 0 1px rgba(255,255,255,.08); background: #fff; }
+.phone img { display: block; width: 100%; }
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<div class="copy">
+  <div class="brand"><img src="assets/icon-192.png" alt="">DevDocs for Android</div>
+  <h1>Developer docs.<br><span>Offline.</span></h1>
+  <p>Download 800+ documentation sets once. Search and read them anywhere, no connection needed.</p>
+  <div class="term"><b>$</b> python · kotlin · java · react  <i>✓ offline</i></div>
+</div>
+<div class="phone"><img src="assets/shots/search.webp" alt=""></div>
+</body>
+</html>

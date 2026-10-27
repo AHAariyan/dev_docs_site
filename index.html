@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevDocs: Offline Developer Documentation for Android</title>
+<meta name="description" content="Download Python, Kotlin, Java, JavaScript and 800+ more docs once, then search and read them offline on Android. Free, no account, no ads.">
+<link rel="canonical" href="https://ahaariyan.github.io/devdocs/">
+<meta name="theme-color" content="#160b17">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DevDocs">
+<meta property="og:title" content="DevDocs: offline developer documentation for Android">
+<meta property="og:description" content="Download 800+ documentation sets once. Search and read them anywhere, no connection needed. Free, no account, no ads.">
+<meta property="og:url" content="https://ahaariyan.github.io/devdocs/">
+<meta property="og:image" content="https://ahaariyan.github.io/devdocs/assets/og-devdocs.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DevDocs for Android: developer docs, offline. A phone showing search results across installed docsets.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DevDocs: offline developer documentation for Android">
+<meta name="twitter:description" content="Download 800+ documentation sets once. Search and read them anywhere, no connection needed. Free, no account, no ads.">
+<meta name="twitter:image" content="https://ahaariyan.github.io/devdocs/assets/og-devdocs.jpg">
+<meta name="twitter:image:alt" content="DevDocs for Android: developer docs, offline.">
+<link rel="stylesheet" href="styles.css?v=1">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "DevDocs - Offline Developer Docs",
+ "alternateName": "DevDocs",
+ "operatingSystem": "ANDROID",
+ "applicationCategory": "DeveloperApplication",
+ "description": "Download developer documentation sets once, then search and read them offline on Android.",
+ "url": "https://ahaariyan.github.io/devdocs/",
+ "image": "https://ahaariyan.github.io/devdocs/assets/icon-192.png",
+ "installUrl": "https://play.google.com/store/apps/details?id=com.devdocs.app",
+ "downloadUrl": "https://play.google.com/store/apps/details?id=com.devdocs.app",
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "DevDocs",
+ "url": "https://ahaariyan.github.io/devdocs/"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Is DevDocs really free?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Downloading, searching, reading and bookmarking docsets is free, with no limit on how many docsets you install and no ads. An optional tip in the app supports development; it unlocks nothing. A paid DevDocs Pro with AI features is planned, and it will only add new features."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it work without internet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. You need a connection to download a docset. After that the library, search, reader and bookmarks work fully offline, including in airplane mode."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Which documentation is available?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The Store lists 806 docsets today: languages such as Python, Java, Kotlin, JavaScript, Go, Rust, C and C++, frameworks such as React, Django, Spring and Laravel, plus databases, DevOps tools and more. A few references that are not published as docsets (C#, .NET API, JavaFX) are listed as online references and need a connection."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "How much storage does it use?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "It depends on the docsets. Bash is under 1 MB and Django about 10 MB to download, while Android is about 299 MB. The library shows how much space each docset uses and how much is free on your device."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Do I need an account?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. There is no sign-in. Your bookmarks and search history stay on your phone."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="./"><img src="assets/icon-64.webp" alt="" width="30" height="30">DevDocs</a>
+    <nav class="nav" aria-label="Main">
+      <a href="./#docsets" class="hide-sm">Docsets</a>
+      <a href="pro/">Pro</a>
+      <a href="faq/">FAQ</a>
+    </nav>
+    <a class="btn btn-play btn-sm" data-play href="https://play.google.com/store/apps/details?id=com.devdocs.app&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dhome_header">Get the app</a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap hero-in">
+    <div>
+      <p class="eyebrow">$ devdocs --offline</p>
+      <h1 id="h1">Developer documentation, <span>offline</span> on your Android phone</h1>
+      <p class="lead">DevDocs downloads the docs you use, from Python and Kotlin to React and Django, and indexes them on your device. Search every installed docset at once and read pages with no connection at all.</p>
+      <div class="actions">
+        <a class="btn btn-play btn-lg" data-play href="https://play.google.com/store/apps/details?id=com.devdocs.app&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dhome"><img src="assets/play-logo.png" alt="" width="18" height="20">Get it on Google Play</a>
+        <a class="btn btn-line btn-lg" href="#docsets">Browse the docsets</a>
+      </div>
+      <ul class="trust"><li>Free, no limits</li><li>No account</li><li>No ads</li><li>806 docsets in the Store</li></ul>
+    </div>
+    <div class="hero-art">
+      <div class="phone"><img src="assets/shots/search.webp" alt="DevDocs search: 200 results for lua across the installed Bash, Lua, Markdown and jq docsets" width="540" height="1055" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">How it works</p>
+      <h2 id="how">An offline docs app for Android, in three steps</h2>
+      <p>DevDocs is a developer docs offline reader: a small app that keeps a local, searchable copy of the documentation you choose.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Pick your docsets</h3><p>Open the Store and browse 806 documentation sets by category, or search for the one you need.</p></li>
+      <li><h3>Download once</h3><p>Tap Download. DevDocs fetches the docset in the background, resumes if the connection drops, and indexes it on your phone.</p></li>
+      <li><h3>Search and read offline</h3><p>Search every installed docset at once, open a page in the reader, bookmark it. No network needed from here on.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="alt" aria-labelledby="demo">
+  <div class="wrap split wide">
+    <div>
+      <p class="kicker">One search, every docset</p>
+      <h2 id="demo">Programming documentation offline, searchable like an IDE</h2>
+      <p>Each docset comes with an index of its entries: classes, functions, methods, properties, keywords, guides. DevDocs copies that index into a local database, so a search runs against your phone, not a server. Results show the docset and the entry type, and you can narrow them to one docset.</p>
+      <p>Below is what a search for <code>groupby</code> can return when Python, Kotlin and Pandas are installed. The entries are real names from those docsets.</p>
+    </div>
+    <div class="term" role="img" aria-label="Illustration of a search for groupby returning itertools.groupby from Python, groupBy and groupingBy from Kotlin and pandas.DataFrame.groupby from Pandas">
+      <div class="term-bar"><i></i><i></i><i></i>&nbsp;search · offline</div>
+      <div class="term-q"><b>&gt;</b> groupby</div>
+      <ol>
+        <li><span>itertools.groupby</span><span class="ds">Python</span><span class="ty">Function</span></li>
+        <li><span>groupBy</span><span class="ds">Kotlin</span><span class="ty">Function</span></li>
+        <li><span>pandas.DataFrame.groupby</span><span class="ds">Pandas</span><span class="ty">Method</span></li>
+        <li><span>groupingBy</span><span class="ds">Kotlin</span><span class="ty">Function</span></li>
+      </ol>
+      <p class="term-note">Illustration, not a screenshot.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Free features</p>
+      <h2 id="features">Everything in the app is free</h2>
+      <p>No trial, no docset limit, no ads. The only limit is the storage on your device.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3><span class="ico" aria-hidden="true">/</span>Search across docsets</h3><p>One search box for everything you have installed, with results labelled by docset and type. Recent searches come back as chips.</p></div>
+      <div class="card"><h3><span class="ico" aria-hidden="true">{}</span>A reader made for code</h3><p>Light, dark and sepia reader themes, four text sizes and adjustable reading width. Links between pages work offline, and back returns to where you were.</p></div>
+      <div class="card"><h3><span class="ico" aria-hidden="true">#</span>Bookmarks to the section</h3><p>Save any entry and it reopens at that exact section, named after the entry rather than the file.</p></div>
+      <div class="card"><h3><span class="ico" aria-hidden="true">↓</span>Downloads that finish</h3><p>Background downloads keep going when you leave the app and resume after a dropped connection. Optional Wi-Fi-only mode.</p></div>
+      <div class="card"><h3><span class="ico" aria-hidden="true">≡</span>Browse a docset</h3><p>Open one docset to see its entries, filter them by type, or search inside just that docset.</p></div>
+      <div class="card"><h3><span class="ico" aria-hidden="true">⇄</span>Phones and tablets</h3><p>Material You colours on Android 12+, dark mode, and a navigation rail in landscape and on large screens.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" aria-labelledby="docsets" id="docsets">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">The catalogue</p>
+      <h2 id="docsets-h">806 documentation sets, ready to download</h2>
+      <p>DevDocs reads the open docset format and lists 181 official docsets, 624 community-contributed ones and one published directly by its project. Popular ones have their own page here:</p>
+    </div>
+    <ul class="chips">
+<li><a href="python-documentation-offline/">Python <span>16,146 entries</span></a></li>
+<li><a href="kotlin-documentation-offline/">Kotlin <span>12,301 entries</span></a></li>
+<li><a href="java-documentation-offline/">Java <span>59,956 entries</span></a></li>
+<li><a href="javascript-documentation-offline/">JavaScript <span>9,447 entries</span></a></li>
+<li><a href="android-documentation-offline/">Android (Kotlin) <span>200,572 entries</span></a></li>
+<li><a href="react-documentation-offline/">React <span>1,369 entries</span></a></li>
+<li><a href="django-documentation-offline/">Django <span>5,705 entries</span></a></li>
+    </ul>
+    <div class="cats">
+      <div><h3>Languages</h3><p>Python, Java, Kotlin, JavaScript, TypeScript, Go, Rust, C, C++, Swift, PHP, Ruby, Dart, Scala, Bash, Lua, R, Perl, Elixir, Haskell, Julia, OCaml…</p></div>
+      <div><h3>Web</h3><p>HTML, CSS, HTTP, SVG, Sass, Less, Bootstrap, jQuery, Markdown, Pug, Twig…</p></div>
+      <div><h3>Frameworks</h3><p>React, Angular, VueJS, Django, Flask, Express, Laravel, Ruby on Rails, Spring Framework, Symfony…</p></div>
+      <div><h3>Mobile</h3><p>Android (Kotlin), Flutter, Ionic, Cordova, Unity 3D…</p></div>
+      <div><h3>Databases</h3><p>PostgreSQL, MySQL, SQLite, MongoDB, Redis, Elasticsearch, CouchDB, SQLAlchemy…</p></div>
+      <div><h3>DevOps and tools</h3><p>Docker, Nginx, Ansible, Vagrant, Man Pages, Vim, CMake, Gradle, NumPy, Pandas, Matplotlib…</p></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="screens">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Inside the app</p>
+      <h2 id="screens">What it looks like</h2>
+      <p>Real screenshots from the current app.</p>
+    </div>
+    <div class="shots">
+      <figure><div class="phone"><img src="assets/shots/library.webp" alt="Library with Bash, Lua, Markdown and jq installed, storage used and free space" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Library</figcaption></figure>
+      <figure><div class="phone"><img src="assets/shots/store.webp" alt="Documentation Store showing 806 docsets with category filters" width="540" height="1046" loading="lazy" decoding="async"></div><figcaption>Store: 806 docsets</figcaption></figure>
+      <figure><div class="phone"><img src="assets/shots/reader.webp" alt="Reader showing the Lua manual entry for ipairs with code" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Reader</figcaption></figure>
+      <figure><div class="phone"><img src="assets/shots/reader-dark.webp" alt="Reader in dark mode with extra-large text" width="540" height="1046" loading="lazy" decoding="async"></div><figcaption>Dark theme, XL text</figcaption></figure>
+      <figure><div class="phone"><img src="assets/shots/bookmarks.webp" alt="Bookmarks list with ipairs from the Lua 5.5 Reference Manual" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Bookmarks</figcaption></figure>
+      <figure><div class="phone"><img src="assets/shots/settings.webp" alt="Settings for theme, font size, reading width, reader theme and Wi-Fi-only downloads" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Settings</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="alt" aria-labelledby="privacy">
+  <div class="wrap split rev">
+    <figure><div class="phone"><img src="assets/shots/docset.webp" alt="A Lua manual page open in the reader with a link menu" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Pages and links work offline.</figcaption></figure>
+    <div>
+      <p class="kicker">Free, private, offline</p>
+      <h2 id="privacy">Your docs stay on your phone</h2>
+      <p>The internet is used to download docsets and check for docset updates. Reading, searching and bookmarking happen on the device. There is no account, and your searches and bookmarks are not sent anywhere.</p>
+      <p>To fix crashes and see which screens are used, the app sends anonymous usage statistics and crash reports. The <a href="https://devdocs.privacypolicy.matrabhed.com/">privacy policy</a> has the details.</p>
+      <p>DevDocs has no ads. If it helps you, you can leave an optional tip from inside the app. It unlocks nothing; everything stays free.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="pro">
+  <div class="wrap split">
+    <div>
+      <p class="kicker">Coming soon <span class="badge">Not on sale yet</span></p>
+      <h2 id="pro">DevDocs Pro: ask your docs</h2>
+      <p>We are building an optional subscription that adds new tools on top of the free app: questions answered from your downloaded docs with links to the pages they come from, Explain this for any selected code, search by meaning, flashcards, tabs and split view. Nothing that is free today will move into Pro.</p>
+      <p><a href="pro/">See what DevDocs Pro will include and the planned price</a></p>
+    </div>
+    <figure><div class="phone"><img src="assets/shots/ask.webp" alt="Pre-release Ask your docs answer about set -e and pipefail with a citation to the Bash manual" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Pre-release build. Not available yet.</figcaption></figure>
+  </div>
+</section>
+
+<section class="alt" aria-labelledby="faq">
+  <div class="narrow">
+    <div class="sec-head">
+      <p class="kicker">FAQ</p>
+      <h2 id="faq">Questions</h2>
+    </div>
+    <div class="faq">
+<details><summary><h3>Is DevDocs really free?</h3></summary><div>Yes. Downloading, searching, reading and bookmarking docsets is free, with no limit on how many docsets you install and no ads. An optional tip in the app supports development; it unlocks nothing. A paid DevDocs Pro with AI features is planned, and it will only add new features.</div></details>
+<details><summary><h3>Does it work without internet?</h3></summary><div>Yes. You need a connection to download a docset. After that the library, search, reader and bookmarks work fully offline, including in airplane mode.</div></details>
+<details><summary><h3>Which documentation is available?</h3></summary><div>The Store lists 806 docsets today: languages such as Python, Java, Kotlin, JavaScript, Go, Rust, C and C++, frameworks such as React, Django, Spring and Laravel, plus databases, DevOps tools and more. A few references that are not published as docsets (C#, .NET API, JavaFX) are listed as online references and need a connection.</div></details>
+<details><summary><h3>How much storage does it use?</h3></summary><div>It depends on the docsets. Bash is under 1 MB and Django about 10 MB to download, while Android is about 299 MB. The library shows how much space each docset uses and how much is free on your device.</div></details>
+<details><summary><h3>Do I need an account?</h3></summary><div>No. There is no sign-in. Your bookmarks and search history stay on your phone.</div></details>
+</div>
+    <p style="margin-top:18px"><a href="faq/">All questions about DevDocs</a></p>
+  </div>
+</section>
+
+<section class="cta" aria-labelledby="cta">
+  <div class="narrow">
+    <h2 id="cta">Put your docs in your pocket</h2>
+    <p>Free on Google Play for Android 7.0 and newer.</p>
+    <div class="actions"><a class="btn btn-play btn-lg" data-play href="https://play.google.com/store/apps/details?id=com.devdocs.app&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dhome_footer"><img src="assets/play-logo.png" alt="" width="18" height="20">Get it on Google Play</a></div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="brand" href="./"><img src="assets/icon-64.webp" alt="" width="30" height="30" loading="lazy">DevDocs</a>
+      <p style="margin-top:12px">Offline developer documentation for Android. Free, no account, no ads.</p>
+      <p>Contact: <a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a></p>
+    </div>
+    <div>
+      <h2>Docsets</h2>
+      <ul>
+        <li><a href="python-documentation-offline/">Python documentation offline</a></li>
+        <li><a href="kotlin-documentation-offline/">Kotlin documentation offline</a></li>
+        <li><a href="java-documentation-offline/">Java documentation offline</a></li>
+        <li><a href="javascript-documentation-offline/">JavaScript documentation offline</a></li>
+        <li><a href="android-documentation-offline/">Android documentation offline</a></li>
+        <li><a href="react-documentation-offline/">React documentation offline</a></li>
+        <li><a href="django-documentation-offline/">Django documentation offline</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>DevDocs</h2>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="pro/">DevDocs Pro (coming soon)</a></li>
+        <li><a href="faq/">FAQ</a></li>
+        <li><a href="https://devdocs.privacypolicy.matrabhed.com/">Privacy policy</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.devdocs.app">DevDocs on Google Play</a></li>
+      </ul>
+      <p style="margin-top:14px;font-size:.82rem">Documentation belongs to its authors and projects. Google Play is a trademark of Google LLC.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js?v=1" defer></script>
+</body>
+</html>

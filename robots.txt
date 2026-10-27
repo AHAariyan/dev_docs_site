@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ahaariyan.github.io/devdocs/sitemap.xml
