@@ -14,16 +14,16 @@
 <meta property="og:title" content="DevDocs Pro: AI Answers From Your Docs (Coming Soon)">
 <meta property="og:description" content="Planned DevDocs Pro features: ask your docs with cited answers, Explain this, search by meaning, flashcards, tabs and split view. Not on sale yet.">
 <meta property="og:url" content="https://ahaariyan.github.io/devdocs/pro/">
-<meta property="og:image" content="https://ahaariyan.github.io/devdocs/assets/og-devdocs.jpg">
+<meta property="og:image" content="https://ahaariyan.github.io/devdocs/assets/og-devdocs-2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DevDocs for Android: developer docs, offline. A phone showing search results across installed docsets.">
+<meta property="og:image:alt" content="DevDocs for Android: developer docs, offline. An illustrated phone searching Python, Kotlin and Pandas docs in airplane mode.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DevDocs Pro: AI Answers From Your Docs (Coming Soon)">
 <meta name="twitter:description" content="Planned DevDocs Pro features: ask your docs with cited answers, Explain this, search by meaning, flashcards, tabs and split view. Not on sale yet.">
-<meta name="twitter:image" content="https://ahaariyan.github.io/devdocs/assets/og-devdocs.jpg">
+<meta name="twitter:image" content="https://ahaariyan.github.io/devdocs/assets/og-devdocs-2.jpg">
 <meta name="twitter:image:alt" content="DevDocs for Android: developer docs, offline.">
-<link rel="stylesheet" href="../styles.css?v=1">
+<link rel="stylesheet" href="../styles.css?v=2">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -109,42 +109,44 @@
 
 <main id="main">
 <section class="hero page-hero" aria-labelledby="h1">
-  <div class="wrap hero-in">
+  <div class="wrap hero-in has-art">
     <div>
       <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">DevDocs</a></li><li aria-current="page">DevDocs Pro</li></ol></nav>
       <p><span class="badge">Coming soon · not on sale yet</span></p>
       <h1 id="h1">DevDocs Pro: <span>ask your docs</span></h1>
       <p class="lead">An optional subscription we are building on top of the free app: AI answers that cite the pages they come from, explanations of any code you select, search by meaning, flashcards, tabs and split view. Everything that is free today stays free.</p>
       <div class="actions"><a class="btn btn-play btn-lg" data-play href="https://play.google.com/store/apps/details?id=com.devdocs.app&amp;referrer=utm_source%3Dwebsite%26utm_medium%3Dpro_notify"><img src="../assets/play-logo.png" alt="" width="18" height="20">Get the free app on Google Play</a><a class="btn btn-line btn-lg" href="#price">Planned price</a></div>
-      <p style="color:var(--hero-muted);font-size:.95rem;margin:16px 0 0">Want to know when Pro launches? Install the free app: Pro will appear inside it. We do not collect email addresses.</p>
+      <p class="hero-note">Want to know when Pro launches? Install the free app: Pro will appear inside it. We do not collect email addresses.</p>
     </div>
+    <div class="page-art"><img src="../assets/art/pro-hero.svg" alt="" width="480" height="400" fetchpriority="high"></div>
   </div>
 </section>
 
-<section aria-labelledby="ask" style="padding-top:24px">
+<section aria-labelledby="ask" class="pt24">
   <div class="wrap">
-<div class="feat"><div class="split">
-  <div><h2 id="ask">Ask the docs</h2><p>Ask a question in plain words, for example "make my script abort as soon as anything goes wrong". DevDocs finds the relevant passages in the docsets on your phone and an AI model writes a short answer from them. Every claim carries a numbered link to the page and section it came from, and tapping it opens that section in the reader.</p><p>If nothing in your docs supports an answer, it says so instead of guessing.</p></div>
-  <figure><div class="phone"><img src="../assets/shots/ask.webp" alt="Pre-release Ask your docs: a question about aborting a Bash script, the answer set -e -o pipefail, and a source link to 3.2.3 Pipelines in the Bash manual" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Pre-release build, Bash manual.</figcaption></figure>
+<div class="feat"><div class="split art-split">
+  <div><span class="ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path class="d" d="M5 4.5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-4.5 3.5v-3.5H5a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2z"/><path d="M5 4.5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-4.5 3.5v-3.5H5a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2zM7.5 9h9M7.5 12.5h5"/></svg></span><h2 id="ask">Ask the docs</h2><p>Ask a question in plain words, for example "make my script abort as soon as anything goes wrong". DevDocs finds the relevant passages in the docsets on your phone and an AI model writes a short answer from them. Every claim carries a numbered link to the page and section it came from, and tapping it opens that section in the reader.</p><p>If nothing in your docs supports an answer, it says so instead of guessing.</p></div>
+  <figure class="art"><img src="../assets/art/ask.svg" alt="" width="516" height="476" loading="lazy" decoding="async"><figcaption>Illustration. Not available yet.</figcaption></figure>
 </div></div>
-<div class="feat"><div class="split rev">
-  <figure><div class="phone"><img src="../assets/shots/explain.webp" alt="Pre-release Explain sheet explaining a paragraph about Bash pipelines with a cited source" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Pre-release build.</figcaption></figure><div><h2 id="explain">Explain this</h2><p>Select a paragraph or a block of code in the reader and choose Explain. A short, plain explanation slides up under the page, with links back to the sections it used.</p></div>
+<div class="feat"><div class="split rev art-split">
+  <figure class="art"><img src="../assets/art/explain.svg" alt="" width="516" height="476" loading="lazy" decoding="async"><figcaption>Illustration. Not available yet.</figcaption></figure><div><span class="ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path class="d" d="M17 2.5l1.2 3.3 3.3 1.2-3.3 1.2L17 11.5l-1.2-3.3L12.5 7l3.3-1.2z"/><path d="M17 2.5l1.2 3.3 3.3 1.2-3.3 1.2L17 11.5l-1.2-3.3L12.5 7l3.3-1.2zM3.5 7h6M3.5 11.5h7M3.5 16h17M3.5 20.5h11"/></svg></span><h2 id="explain">Explain this</h2><p>Select a paragraph or a block of code in the reader and choose Explain. A short, plain explanation slides up under the page, with links back to the sections it used.</p></div>
 
 </div></div>
-<div class="feat"><div class="split">
-  <div><h2 id="meaning">Smart search: by meaning</h2><p>Next to the normal search by name, search by meaning finds passages that match what you describe, even when you do not know the name. Describe it as "make my script abort as soon as anything goes wrong" and the results include 4.3.1 The Set Builtin from the Bash manual, where <code>set -e</code> lives. Results show the docset, the section path and a two-line excerpt.</p><p>The passage index is built on your phone. Offline, it falls back to text matches.</p></div>
-  <figure><div class="phone"><img src="../assets/shots/meaning.webp" alt="Pre-release search by meaning results with passages from the Lua and Bash manuals" width="540" height="1046" loading="lazy" decoding="async"></div><figcaption>Pre-release build.</figcaption></figure>
+<div class="feat"><div class="split art-split">
+  <div><span class="ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><circle class="d" cx="10.5" cy="10.5" r="6.5"/><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20 20M10.5 7.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></svg></span><h2 id="meaning">Smart search: by meaning</h2><p>Next to the normal search by name, search by meaning finds passages that match what you describe, even when you do not know the name. Describe it as "make my script abort as soon as anything goes wrong" and the results include 4.3.1 The Set Builtin from the Bash manual, where <code>set -e</code> lives. Results show the docset, the section path and a two-line excerpt.</p><p>The passage index is built on your phone. Offline, it falls back to text matches.</p></div>
+  <figure class="art"><img src="../assets/art/meaning.svg" alt="" width="516" height="476" loading="lazy" decoding="async"><figcaption>Illustration. Not available yet.</figcaption></figure>
 </div></div>
-<div class="feat"><div class="split rev">
-  <figure><div class="phone"><img src="../assets/shots/cards.webp" alt="Pre-release New flashcards screen with ten AI-generated cards from Lua bookmarks" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Pre-release build.</figcaption></figure><div><h2 id="learn">Learn mode</h2><p>Turn a page or your bookmarks into flashcards or a short quiz, edit or delete cards before saving, then review them with spaced repetition. Reviews work offline.</p></div>
+<div class="feat"><div class="split rev art-split">
+  <figure class="art"><img src="../assets/art/learn.svg" alt="" width="516" height="476" loading="lazy" decoding="async"><figcaption>Illustration. Not available yet.</figcaption></figure><div><span class="ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><rect class="d" x="3" y="8" width="13.5" height="11.5" rx="2"/><rect x="3" y="8" width="13.5" height="11.5" rx="2"/><path d="M7.5 4.5H19a2 2 0 0 1 2 2V15M7 12.5h5.5M7 15.5h3.5"/></svg></span><h2 id="learn">Learn mode</h2><p>Turn a page or your bookmarks into flashcards or a short quiz, edit or delete cards before saving, then review them with spaced repetition. Reviews work offline.</p></div>
 
 </div></div>
-<div class="feat"><div class="split">
-  <div><h2 id="tabs">Tabs and split view</h2><p>Long-press a link to open it in a new tab, switch between up to ten tabs, and on tablets or in landscape read two pages side by side.</p></div>
-  <figure><div class="phone"><img src="../assets/shots/tabs.webp" alt="Pre-release tab switcher with two Lua manual tabs open" width="540" height="1055" loading="lazy" decoding="async"></div><figcaption>Pre-release build.</figcaption></figure>
+<div class="feat"><div class="split art-split">
+  <div><span class="ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><rect class="d" x="3" y="4.5" width="9" height="15" rx="2"/><rect x="3" y="4.5" width="18" height="15" rx="2"/><path d="M12 4.5v15M6 8.5h3M15 8.5h3"/></svg></span><h2 id="tabs">Tabs and split view</h2><p>Long-press a link to open it in a new tab, switch between up to ten tabs, and on tablets or in landscape read two pages side by side.</p></div>
+  <figure class="art"><img src="../assets/art/tabs.svg" alt="" width="516" height="476" loading="lazy" decoding="async"><figcaption>Illustration. Not available yet.</figcaption></figure>
 </div></div>
-<div class="feat"><div class="split">
-  <div><h2 id="more">Look up anywhere, auto-updates and a widget</h2><p><strong>Look up anywhere:</strong> select a word in any app and choose DevDocs from the text menu to search your docs for it. <strong>Background auto-updates</strong> keep installed docsets current while the phone charges. A <strong>home-screen widget</strong> opens search in one tap. (Updating docsets from the Store stays free, as today.)</p></div>
+<div class="feat"><div class="split art-split">
+  <div><span class="ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path class="d" d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></svg></span><h2 id="more">Look up anywhere, auto-updates and a widget</h2><p><strong>Look up anywhere:</strong> select a word in any app and choose DevDocs from the text menu to search your docs for it. <strong>Background auto-updates</strong> keep installed docsets current while the phone charges. A <strong>home-screen widget</strong> opens search in one tap. (Updating docsets from the Store stays free, as today.)</p></div>
+  <figure class="art"><img src="../assets/art/more.svg" alt="" width="516" height="476" loading="lazy" decoding="async"><figcaption>Illustration. Not available yet.</figcaption></figure>
 
 </div></div>
   </div>
@@ -171,7 +173,7 @@
       <div class="card"><h3>Monthly</h3><p class="amt">$3.99 <small>/ month</small></p><p>Planned. Cancel any time in Google Play.</p></div>
       <div class="card"><h3>Yearly</h3><p class="amt">$24.99 <small>/ year</small></p><p>Planned, with a 7-day free trial for new subscribers.</p></div>
     </div>
-    <p style="color:var(--muted)">Prices in US dollars; Google Play shows local prices. Pro is <strong>not on sale yet</strong>, so nothing can be bought today. The free app keeps every current feature with no limits.</p>
+    <p class="muted">Prices in US dollars; Google Play shows local prices. Pro is <strong>not on sale yet</strong>, so nothing can be bought today. The free app keeps every current feature with no limits.</p>
   </div>
 </section>
 
@@ -200,7 +202,7 @@
   <div class="wrap foot-in">
     <div>
       <a class="brand" href="../"><img src="../assets/icon-64.webp" alt="" width="30" height="30" loading="lazy">DevDocs</a>
-      <p style="margin-top:12px">Offline developer documentation for Android. Free, no account, no ads.</p>
+      <p class="mt12">Offline developer documentation for Android. Free, no account, no ads.</p>
       <p>Contact: <a href="mailto:abdulhady.aariyan@gmail.com">abdulhady.aariyan@gmail.com</a></p>
     </div>
     <div>
@@ -224,7 +226,7 @@
         <li><a href="https://devdocs.privacypolicy.matrabhed.com/">Privacy policy</a></li>
         <li><a href="https://play.google.com/store/apps/details?id=com.devdocs.app">DevDocs on Google Play</a></li>
       </ul>
-      <p style="margin-top:14px;font-size:.82rem">Documentation belongs to its authors and projects. Google Play is a trademark of Google LLC.</p>
+      <p class="fine">Documentation belongs to its authors and projects. Google Play is a trademark of Google LLC.</p>
     </div>
   </div>
 </footer>
