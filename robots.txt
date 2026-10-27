@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ahaariyan.github.io/dev_docs_site/sitemap.xml
+Sitemap: https://devdocs.landing.matrabhed.com/sitemap.xml
