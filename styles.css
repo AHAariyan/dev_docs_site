@@ -249,3 +249,21 @@ section.pt24 { padding-top: 24px; }
 .ai-pill b{font-weight:700}
 .ai-spark{color:#f283a6}
 .ai-soon{font-size:.72rem;font-weight:650;padding:.12rem .45rem;border-radius:999px;background:rgba(255,255,255,.12);color:#e6d3df}
+
+/* Email signup (hidden until configured; see assets/site.js) */
+section.signup { padding: 0 0 80px; }
+.su-card { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+.su-copy h2 { font-size: clamp(1.3rem, 2.4vw, 1.6rem); }
+.su-copy p:last-child { color: var(--muted); margin: 0; font-size: .97rem; }
+.su-copy .kicker { margin-bottom: 10px; }
+.su-label { display: block; font-weight: 650; font-size: .92rem; margin-bottom: 6px; }
+.su-row { display: flex; gap: 8px; }
+.su-row input { flex: 1; min-width: 0; min-height: 44px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; font-size: 1rem; }
+.su-row input:focus-visible { border-color: var(--accent); }
+.su-row .btn { cursor: pointer; font-family: inherit; }
+.su-row .btn:disabled { opacity: .6; cursor: default; }
+.su-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.su-fine { font-size: .82rem; color: var(--muted); margin: 10px 0 0; }
+.su-status { font-weight: 650; color: var(--ok); margin: 8px 0 0; }
+.su-status:empty { display: none; }
+@media (max-width: 700px) { .su-card { grid-template-columns: 1fr; padding: 22px; } .su-row { flex-direction: column; } }

@@ -256,6 +256,30 @@
   </div>
 </section>
 
+<!-- Email list. Hidden until data-endpoint holds the provider's form URL (see the email-list README in the growth kit). -->
+<section class="signup" id="signup" aria-labelledby="signup-h" data-endpoint="" data-field="email_address" hidden>
+  <div class="narrow">
+    <div class="su-card">
+      <div class="su-copy">
+        <p class="kicker">Early access</p>
+        <h2 id="signup-h">Get notified when DevDocs Pro launches</h2>
+        <p>Join the early-access list: we will email you the day Pro goes on sale, with the 7-day free trial.</p>
+      </div>
+      <form class="su-form" method="post" target="su-frame">
+        <label class="su-label" for="su-email">Email address</label>
+        <div class="su-row">
+          <input id="su-email" type="email" required autocomplete="email" inputmode="email" spellcheck="false" placeholder="you@example.com" aria-describedby="su-fine">
+          <button class="btn btn-play" type="submit">Notify me</button>
+        </div>
+        <div class="su-trap" aria-hidden="true"><label>Leave this empty <input type="text" tabindex="-1" autocomplete="off"></label></div>
+        <p class="su-fine" id="su-fine">One short email when there is something new. Unsubscribe anytime. <a href="https://devdocs.privacypolicy.matrabhed.com/">Privacy policy</a></p>
+        <p class="su-status" role="status" aria-live="polite"></p>
+      </form>
+      <iframe name="su-frame" title="Signup response" hidden></iframe>
+    </div>
+  </div>
+</section>
+
 <section class="alt" aria-labelledby="faq">
   <div class="narrow">
     <div class="sec-head">
@@ -313,6 +337,6 @@
     </div>
   </div>
 </footer>
-<script src="assets/site.js?v=1" defer></script>
+<script src="assets/site.js?v=2" defer></script>
 </body>
 </html>
